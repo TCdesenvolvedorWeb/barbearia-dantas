@@ -5,13 +5,15 @@ import {
   faScissors,
   faUserTie,
 } from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import styled from "styled-components";
+import { ServicosSection, StyledIcon , Options, Option, Title } from "../../assets/styles/Servicos";
 // import imgServicos from "../../assets/img/servicos.jpg";
 
 const Servicos = () => {
   return (
     <ServicosSection>
+
+      <Title> Serviços </Title>
+
       <Options>
         <Option>
           <StyledIcon icon={faScissors} />
@@ -77,49 +79,6 @@ const Servicos = () => {
     </ServicosSection>
   );
 };
-
-const ServicosSection = styled.section`
-  width: 100vw;
-  margin: 0 auto;
-  display: flex;
-  justify-content: center;
-  aoptiongn-items: center;
-`;
-
-const Options = styled.ul`
-  height: 500px;
-  overflow: auto;
-  scrollbar-width: none;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  gap: 20px;
-`;
-
-const Option = styled.li`
-  width: 400px;
-  height: 300px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 30px;
-  font-size: 1.6rem;
-  text-align: center;
-  border: solid 1px #4D574E;
-  background-color: var(--contrast-base);
-  
-  p{
-    width: 300px;
-  }
-`;
-
-const StyledIcon = styled(FontAwesomeIcon)`
-  color: #000;
-  width: 50px;
-  height: 50px;
-`;
 
 // const ServicosPrice = styled.img`
 //   width: 300px;
