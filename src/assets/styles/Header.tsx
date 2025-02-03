@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 const HeaderPage = styled.header`
-  width: 100vw;
+  max-width: 100vw;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -9,7 +9,6 @@ const HeaderPage = styled.header`
 `;
 
 const Menu = styled.ul`
-  list-style: none;
   display: flex;
   gap: 30px;
   font-size: 1.6rem;
