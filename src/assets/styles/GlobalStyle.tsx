@@ -10,6 +10,11 @@ const GlobalStyle = createGlobalStyle`
   // outline: 1px red solid;
 }
 
+a {
+  text-decoration: none;
+  color: #eee;
+}
+
 html{
   font-size: 62.5%;
 }
